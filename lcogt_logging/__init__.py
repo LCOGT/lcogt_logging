@@ -4,7 +4,7 @@ import json
 
 class LCOGTFormatter(logging.Formatter):
     """
-    A custom log formatter that defauls to LCO's logging conventions.
+    A custom log formatter that defauls to LCOGT's logging conventions.
 
     Additionally handles calls to logging that pass in a dictionary
     with a top level of "tags" to the extra argument.

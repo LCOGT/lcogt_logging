@@ -27,11 +27,11 @@ LCOGT standards"""
 
 
 setup(
-    name='lco-logging',
+    name='lcogt-logging',
     version='0.1.1',
     description=DESCRIPTION,
     long_description=DESCRIPTION,
     author='Austin Riba',
     author_email='ariba@lcogt.net',
-    packages=['lco_logging'],
+    packages=['lcogt_logging'],
 )

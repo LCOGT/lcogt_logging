@@ -33,5 +33,5 @@ setup(
     long_description=DESCRIPTION,
     author='Austin Riba',
     author_email='ariba@lcogt.net',
-    packages=['lco_logger'],
+    packages=['lco_logging'],
 )

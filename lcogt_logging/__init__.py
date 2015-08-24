@@ -2,7 +2,7 @@ import logging
 import json
 
 
-class LCOFormatter(logging.Formatter):
+class LCOGTFormatter(logging.Formatter):
     """
     A custom log formatter that defauls to LCO's logging conventions.
 

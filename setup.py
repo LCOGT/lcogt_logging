@@ -28,7 +28,7 @@ LCOGT standards"""
 
 setup(
     name='lco-logging',
-    version='0.1.0',
+    version='0.1.1',
     description=DESCRIPTION,
     long_description=DESCRIPTION,
     author='Austin Riba',

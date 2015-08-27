@@ -1,8 +1,6 @@
 import sys
 import os
 import logging
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from lcogt_logging import LCOGTFormatter
 
 # Get a named logger

@@ -1,7 +1,6 @@
 import logging
 from testfixtures import log_capture
 import sys
-import os
 from lcogt_logging import LCOGTFormatter
 
 

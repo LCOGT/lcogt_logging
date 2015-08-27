@@ -1,1 +1,1 @@
-from lcogt_formatter import LCOGTFormatter # noqa
+from lcogt_formatter import LCOGTFormatter  # noqa

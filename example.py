@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+
+'''
+Example of using LCOGTFormatter with logging
+Austin Riba
+Aug 2015
+'''
+
 import sys
 import os
 import logging

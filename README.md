@@ -7,12 +7,12 @@ adhere to the LCOGT logging standards.
 
 Installation
 ------------
-This module is available on the internal PyPI:
+This module is available on the internal PyPI (http://buildsba.lco.gtn/python/):
 `$ pip install lcogt-logging`
 
 Usage
 -----
-Set your StreamHandler's formatter to an insatiated LCOGTFormatter:
+Set your StreamHandler's formatter to an instantiated LCOGTFormatter:
 `stream_handler.setFormatter(LCOGTFormatter())`
 
 More advanced usage, including the use of tags, can be found in example.py:
@@ -27,9 +27,9 @@ $ python example.py
 Testing
 -------
 
-Install the requirements from `requirements-text.txt`:
+Install the requirements from `test_requirements.txt`:
 
-`$ pip install -r requirements-test.txt`
+`$ pip install -r test_requirements.txt`
 
 Run the tests:
 

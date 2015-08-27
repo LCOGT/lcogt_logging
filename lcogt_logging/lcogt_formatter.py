@@ -1,3 +1,12 @@
+#!/usr/bin/env python
+
+'''
+Contains code relevant to logging standards
+
+Austin Riba
+Aug 2015
+'''
+
 import logging
 import json
 
@@ -6,7 +15,7 @@ class LCOGTFormatter(logging.Formatter):
     """
     A custom log formatter that defauls to LCOGT's logging conventions.
 
-    The argument "extra_tags" takes a dictionary that will be appened
+    The argument "extra_tags" takes a dictionary that will be appended
     to the log message as json.
 
     Additionally handles calls to logging that pass in a dictionary

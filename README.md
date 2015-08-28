@@ -34,4 +34,4 @@ Install the requirements from `test_requirements.txt`:
 
 Run the tests:
 
-`$ py.test test.py`
+`$ py.test`

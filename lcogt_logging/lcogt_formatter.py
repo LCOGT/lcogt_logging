@@ -34,7 +34,11 @@ class LCOGTFormatter(logging.Formatter):
         if 'tags' in record.__dict__:
             tags.update(record.__dict__['tags'])
         if self.extra_tags:
-            tags.update(self.extra_tags)
+            for tag in self.extra_tags:
+                if hasattr(self.extra_tags[tag], '__call__'):
+                    tags.update({tag: self.extra_tags[tag]()})
+                else:
+                    tags.update({tag: self.extra_tags[tag]})
         if tags:
             record.msg = '{0} | {1}'.format(
                 record.msg,

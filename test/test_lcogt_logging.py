@@ -11,6 +11,7 @@ import sys
 import logging
 from testfixtures import log_capture
 from lcogt_logging import LCOGTFormatter
+import time
 
 
 class TestLogging(object):
@@ -55,4 +56,17 @@ class TestLogging(object):
         assert all([_ in l.records[0].message for _ in ['this has it all',
                                                         '"test": true',
                                                         '"prod": false',
+                                                        '"foo": "bar"']])
+
+    def callable_func(self):
+        return "I was called!"
+
+    @log_capture()
+    def test_logger_and_extra_tags_callable(self, l):
+        helpful_info = {'test': True, 'callablefunc': self.callable_func}
+        logger = self.get_logger(LCOGTFormatter(extra_tags=helpful_info))
+        logger.error('this has it all', extra={"tags": {"foo": "bar"}})
+        assert all([_ in l.records[0].message for _ in ['this has it all',
+                                                        '"test": true',
+                                                        '"callablefunc": "I was called!"',
                                                         '"foo": "bar"']])

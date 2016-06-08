@@ -7,7 +7,7 @@ adhere to the LCOGT logging standards.
 
 Installation
 ------------
-This module is available on the internal PyPI (http://buildsba.lco.gtn/python/):
+This module is available on PyPI
 
 `$ pip install lcogt-logging`
 
